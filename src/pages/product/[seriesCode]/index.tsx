@@ -9,8 +9,8 @@ const ProductDetail = () => {
     <>
       <h1>Product detail</h1>
       <h3>
-        <Link href="/product/1234?Page=2">
-          Link has query seriesCode=1234 and Page = 2
+        <Link href="/product/5678?Page=3">
+          Link has query seriesCode=5678 and Page = 3
         </Link>
       </h3>
       <p>=============================</p>
