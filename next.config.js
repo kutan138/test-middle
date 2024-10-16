@@ -1,6 +1,8 @@
-const nextConfig = {
+const nextBuildId = require("next-build-id");
+module.exports = {
   trailingSlash: true,
-  generateBuildId: () => "release/v1",
+  generateBuildId() {
+    // NOTE: describe=true の場合、タグが付与されているとタグ、そうでなければ commit hash
+    return nextBuildId({ dir: __dirname, describe: true });
+  },
 };
-
-export default nextConfig;
